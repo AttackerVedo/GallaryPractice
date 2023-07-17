@@ -47,11 +47,13 @@ class MainActivity : AppCompatActivity() {
         }
     }//onCreate
 
+    //툴바에 버튼 +
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu,menu)
         return true
     }
 
+    //메뉴 클릭 했을 때
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
             R.id.action_add -> {

@@ -27,6 +27,7 @@ class FrameActivity : AppCompatActivity() {
 
         binding.viewPager.adapter = frameAdapter
 
+        // 탭레이아웃 연결
         TabLayoutMediator(
             binding.tabLayout,
             binding.viewPager
@@ -39,6 +40,7 @@ class FrameActivity : AppCompatActivity() {
     //뒤로가기
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
+            //홈이 뒤로가기버튼임
             android.R.id.home ->{
                 finish()
                 true
